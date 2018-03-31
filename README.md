@@ -5,12 +5,18 @@
 - Tired of forgetting to make a README?
 - Tired of your files not being executable?
 
-Then you can use this tool to do all of that work for you!
+This tool does all the initial work of setting up your project so you can avoid
+those mistakes and save yourself some time.
+
+### Installation
+`git clone https://github.com/eightlimbed/holberton_project_setup.git`
 
 ### Usage
-All you need to do is enter the Project # (found in the project's URL), 
+After cloning this repo, simply run `./hps.py`.
+
+You will me prompted to enter the Project # (found in the project's URL),
 Student ID, and password. The script will do the rest. After creating the files
-you will be prompted for two additional options: Whether or not you want a
+you will be prompted again for two additional options: Whether or not you want a
 README, and whether or not you want your files to be executable.
 
 ![Step 1](images/hps1.png)
@@ -22,13 +28,17 @@ be full of all files required for the mandatory tasks.
 
 Then, if needed, you can `mv the_directory where_you_want_it`.
 
+### Notes
+- I currently don't recommend using this for the bigger projects like
+  `AirBnb_clone`. I've noticed some bugs with projects that involve making extra
+directories, so be warned. Nothing terrible will happen to your system, but the
+script might break.
+- `hps.py` depends on `parser.py`, so be careful if you move these files around.
+- Your README.md will only contain the name of the directory. You should add
+  more to it :)
 
-### Features
-- Interactive CLI
-- Generates all mandatory files for a project
-- Hides password when you type it in
-- Generates a README with the name of the project inside of it (optional)
-- Automatically makes all project files executable (optional)
+### Bugs?
+Please message me here on github if you notice any bugs :)
 
-### Requirements
-
+### Want to contribute?
+Message me here or on slack if you want to make this thing better :)
