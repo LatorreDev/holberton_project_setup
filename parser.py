@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# parser.py: Goes through the content of the project page and gets the Project
-# Name, GitHub Repository, Directory Name, and File Names
+# parser.py: Goes through the content of the project page and gets the GitHub
+# Repository, Directory Name, and File Names
 
 github_repo, directory, file_names, project_name = ([],[],[],[])
 
-with open('content', 'r', encoding='utf-8') as content:
+with open('project_content', 'r', encoding='utf-8') as content:
     for line in content:
         if line.startswith('0x'):
             project_name.append(line)
@@ -15,11 +15,12 @@ with open('content', 'r', encoding='utf-8') as content:
         if line.startswith('File: '):
             file_names.append(line)
 
-# Getting Project Name
-project_name = set(project_name)
-
 # Getting GitHub Repo
-github_repo = list(set(github_repo))[0].split(' ')[2][0:-1]
+try:
+    github_repo = list(set(github_repo))[0].split(' ')[2][0:-1]
+except IndexError:
+    print('Something went wrong. Make sure you entered the correct project ID')
+    exit()
 
 # Getting Directory
 directory = list(set(directory))[0].split(' ')[1][0:-1]
