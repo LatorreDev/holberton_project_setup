@@ -7,8 +7,20 @@
 
 Then you can use this tool to do all of that work for you!
 
-Here is how it works:
+### Usage
+All you need to do is enter the Project # (found in the project's URL), 
+Student ID, and password. The script will do the rest. After creating the files
+you will be prompted for two additional options: Whether or not you want a
+README, and whether or not you want your files to be executable.
 
+![Step 1](images/hps1.png)
+
+The new directory will be created in your current working directory and it will
+be full of all files required for the mandatory tasks.
+
+![Step 2](images/hps2.png)
+
+Then, if needed, you can `mv the_directory where_you_want_it`.
 
 
 ### Features
@@ -18,5 +30,5 @@ Here is how it works:
 - Generates a README with the name of the project inside of it (optional)
 - Automatically makes all project files executable (optional)
 
-### Usage
 ### Requirements
+
