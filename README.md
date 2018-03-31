@@ -1,5 +1,14 @@
 ## Holberton Project Setup
-Automates the creation of directories and files for Holberton School projects.
+**Automation tool for Holberton School projects**
+
+- Tired of typos in your file names that lead to missed checks?
+- Tired of forgetting to make a README?
+- Tired of your files not being executable?
+
+Then you can use this tool to do all of that work for you!
+
+Here is how it works:
+
 
 
 ### Features
