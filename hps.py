@@ -7,15 +7,16 @@
 # ------------
 
 # Get project ID, username, and password
-print('Holby File Generator')
-print('-' * 19)
+print()
+print('~~~ Holberton Project Setup ~~~')
+print('-' * 31)
 print('Project #: ', end='')
 project_id = input()
-print('Username: ', end='')
+print('Student ID: ', end='')
 username = input()
 from getpass import getpass
 password = getpass('Password: ')
-print('Attempting to log in to the intranet. Just a minute...')
+print('Attempting to log in to the intranet. Just a moment...')
 
 # ------------------------
 # Selenium webdriver stage
@@ -44,7 +45,7 @@ if 'Invalid' in html.text:
 else:
     print('Login successful!')
     print('Attempting to find project #{}'.format(project_id), end='. ')
-    print('Just a minute...')
+    print('Just a moment...')
 
 # Navigate to the project we want to generate files for
 driver.get('https://intranet.hbtn.io/projects/{}'.format(project_id))
