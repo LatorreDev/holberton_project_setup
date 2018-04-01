@@ -17,6 +17,7 @@ In order to use this tool you need to have the following installed:
 
 ### Installation
 `git clone https://github.com/eightlimbed/holberton_project_setup.git`
+
 `cd holberton_project_setup`
 
 ### Usage
