@@ -103,7 +103,7 @@ def assemble(project, directory, files):
 def make_executable(directory):
     '''Makes all files in the directory executable. Happens before README is
     made.'''
-    subprocess.run('chmod u+x *', shell=True)
+    subprocess.Popen('chmod u+x *', shell=True)
     print('Done.')
     return
 

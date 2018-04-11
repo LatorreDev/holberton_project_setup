@@ -8,10 +8,16 @@
 This tool does all the initial work of setting up your project so you can avoid
 those mistakes and save yourself some time.
 
+![Project Setup](images/ver2.png)
+
+### Requirements
+- python3
+- BeautifulSoup (`sudo pip3 install bs4`)
+- Requests (`sudo pip3 install requests`)
+
 ### Get Started
-1. Requirements: `python3`
-2. `git clone https://github.com/eightlimbed/holberton_project_setup.git`
-3. `./pjs`
+1. `git clone https://github.com/eightlimbed/holberton_project_setup.git`
+2. `./pjs`
 
 ### Updates from ver1
 - Calling it `pjs` now because I think it sounds better that 'hps', plus its
