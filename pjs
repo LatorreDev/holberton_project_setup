@@ -30,7 +30,7 @@ def login(endpoint, token, sesh):
     post_response = sesh.post(endpoint, data=creds)
     if len(post_response.text) < 5000:
         '''I'm using the length of the response to determine if login failed.
-        A successfully login will take you to the dashboard, which has
+        A successful login will take you to the dashboard, which has
         approximately 3x as many characters as the login page.'''
         print('Invalid ID and/or Password. Try again. Exiting...')
         exit()
